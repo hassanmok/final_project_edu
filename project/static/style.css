@@ -10,7 +10,19 @@
 
   #bar_right{
     margin-left: 5%;
+  }
+  #right_bar a {
+    color: white; /* Set initial color */
+    transition: color 0.3s ease; /* Smooth transition */
+  }
 
-
-
+  #right_bar a:hover {
+    color: #FF20BC; /* Change to black on hover */
+  }
+  #logout {
+    background-color: #FF20BC; /* Set initial color */
+    transition: color 0.3s ease;
+  }
+  #logout:hover{
+    background-color: white; /* Set initial color */
   }
