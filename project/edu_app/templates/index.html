@@ -14,40 +14,26 @@
     <link rel="icon" type="image/png" sizes="512x512" href="{% static 'images/spider_logo2.png' %}">
 </head>
 <body>
-    <div id="upper_bar" class="bg-black p-8 flex justify-between items-center p-0">
-        <div id="left_bar" class="ml-8 my-2">
-          <a href="#">
-            <img class="h-24" src="{% static 'images/spider_logo2.png' %}" alt="logo_spider">
-          </a>
-        </div>
-        <div id="right_bar" class="flex space-x-4 mr-12 text-xl">
-            <a href="#">HOME</a>
-            <a href="#">COURSES</a>
-            <a href="#">CHALLENGES</a>
-            <a href="#">PROFILE</a>
-            <a href="#" class="pr-1">
-            <svg id="logout" xmlns="http://www.w3.org/2000/svg" class="rounded-xl py-0.5 pr-1" width="32" height="30" fill="currentColor" class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0z"/>
-                <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z"/>
-              </svg>
+  <div id="main" style="display: none;">
+      <div id="upper_bar" class="bg-black p-8 flex justify-between items-center p-0">
+          <div id="left_bar" class="ml-8 my-2">
+            <a href="#">
+              <img class="h-24" src="{% static 'images/spider_logo2.png' %}" alt="logo_spider">
             </a>
-        </div>
-    </div>
-    <!-- 
-    <div id="upper_bar" class="bg-black p-8">
-        <div id="left_bar">
-            <img src="{% static 'images/spider_logo.png' %}" alt="logo_spider">
-        </div>
-        <div id="right_bar" class="text-white flex justify-end space-x-4">
-            <h3 id="bar_right">HOME</h3>
-            <h3 id="bar_right">COURSES</h3>
-            <h3 id="bar_right">CALLANGES</h3>
-            <h3 id="bar_right">PROFILE</h3>
-            <h3 id="bar_right">LOGOUT</h3>
-        </div>
-    </div>
-    -->
-    <div id="main">
+          </div>
+          <div id="right_bar" class="flex space-x-4 mr-12 text-xl">
+              <a href="#">HOME</a>
+              <a href="#">COURSES</a>
+              <a href="#">CHALLENGES</a>
+              <a href="#">PROFILE</a>
+              <a href="#" class="pr-1">
+              <svg id="logout" xmlns="http://www.w3.org/2000/svg" class="rounded-xl py-0.5 pr-1" width="32" height="30" fill="currentColor" class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0z"/>
+                  <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z"/>
+                </svg>
+              </a>
+          </div>
+      </div>
       <div class="flex justify-between">
         <div class="my-28 mx-8">
         <h2 class="text-2xl font-normal">Welcome to spider coding websit, the event-juggling<br>scheduler for everyone. Focus on meeting, 
@@ -90,11 +76,11 @@
                 <button style="border-color: #000000; border-radius: 1.5rem 1.5rem 1.5rem 1.5rem; box-shadow: 0 4px 0px rgb(0, 0, 0);" type="button" class="px-10 py-6 border-3"><b>WEBSIT CODE ></b></button>
             </div>
         </div>
-        <div class="bg-black flex justify-center rounded-3xl mx-60 my-12 py-28">
-            <h1 id="text_mok2" class="text-white text-4xl leading-snug"></h1>
+        <div class="bg-black flex justify-center rounded-3xl mx-36 my-12 py-28">
+            <h1 id="text_mok2" class="text-white text-4xl leading-snug mx-4"></h1>
         </div>
         <div>
-            <h1 class="flex justify-center text-6xl border-black">OUR COURSES:</h1>
+            <h1 class="flex justify-center text-6xl border-black"><b>OUR COURSES:</b></h1>
         </div>
         <div class="flex justify-center flex justify-evenly my-12">
             <div class="card" style="width: 18rem;">
@@ -127,25 +113,58 @@
             <div class="flex justify-center mb-6 py-2 px-2"> 
               <button type="button" class="btn btn-outline-dark rounded-3xl py-2 px-2">SHOW ALL COURSES</button>
             </div>
+            <div class="flex justify-center" >
+              <img src="{% static 'images/ai.jpg' %}" style="border: 2px solid rgb(0, 0, 0); box-shadow: 0 4px 8px rgb(0, 0, 0);" class="w-1/4" alt="">
+            </div>
+            <div class="flex justify-evenly mt-24">
+              <img class="w-1/6" style="border: 2px solid rgb(0, 0, 0); box-shadow: 0 4px 8px rgb(0, 0, 0);" src="{% static 'images/ai.jpg' %}" alt="">
+              <img class="w-1/6" style="border: 2px solid rgb(0, 0, 0); box-shadow: 0 4px 8px rgb(0, 0, 0);" src="{% static 'images/ai.jpg' %}" alt="">
+              <img class="w-1/6" style="border: 2px solid rgb(0, 0, 0); box-shadow: 0 4px 8px rgb(0, 0, 0);" src="{% static 'images/ai.jpg' %}" alt="">
+            </div>
+            <div class="flex justify-center my-20">
+              <div class="flex justify-between bg-black rounded-3xl mx-8" style="height: 24rem; width: 80rem;">
+                <img class="h-1/2 ml-20 mt-20" src="{% static 'images/spider_logo2.png' %}" alt="">
+                <div class="flex justify-between mt-28" style="color: #E1E1E1;">
+                  <div class="mr-16">
+                    <h1><b>Solutions</b></h1>
+                    <h1 id="b_bar_1">Self-hosted</h1>
+                    <h1 id="b_bar_1">SaaS Hosting</h1>
+                    <h1 id="b_bar_1">Platform</h1>
+                    <h1 id="b_bar_1">Desktop App</h1>
+                  </div>
+                  <div class="mr-16">
+                    <h1><b>Documentation</b></h1>
+                    <h1 id="b_bar_1">hassan</h1>
+                    <h1 id="b_bar_1">hassan</h1>
+                    <h1 id="b_bar_1">hassan</h1>
+                  </div>
+                  <div class="mr-16">
+                    <h1><b>resources</b></h1>
+                    <h1 id="b_bar_1">hassan</h1>
+                    <h1 id="b_bar_1">hassan</h1>
+                    <h1 id="b_bar_1">hassan</h1>
+                  </div>
+                  <div class="mr-16">
+                    <h1><b>Company</b></h1>
+                    <h1 id="b_bar_1">hassan</h1>
+                    <h1 id="b_bar_1">hassan</h1>
+                    <h1 id="b_bar_1">hassan</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
     </div>
+
+    <div id="loading-screen">
+      <video autoplay muted loop>
+          <source src="{% static 'images/load.mp4' %}" type="video/mp4">
+          Your browser does not support the video tag.
+      </video>
+  </div>
+
+
+
     <!--scripts hassan-->
-    <script>
-      var typed = new Typed("#text_mok", {
-        strings: ["Join us to<br>learn program like <span style='color: rgb(255, 255, 255);'>spider web.</span>"],
-        typeSpeed: 50,
-        showCursor: false
-      });
-    </script>
-    <script>
-      var typed2 = new Typed("#text_mok2", {
-        strings: ["<b><span style='color: #0116FF;'>#include</span>&lt;<span style='color: #F31BAB;'>iostream</span>&gt;<br> \
-                   using namespace <span style='color: #0116FF;'>std;</span><br> \
-                   <span style='color: #0116FF;'>int</span> main() {<br> \
-                   // <span style='color: #00FFE1;'>Welcome message for<br>Spider Coding visitors</span><br> \
-                   cout << <span style='color: #EEFF00;'>\"Hi! Welcome to Spider Coding!\"</span> << endl;<br> \
-                   <span style='color: #0116FF;'>return</span> 0; }</b>"],
-        typeSpeed: 25
-      });
-    </script>
+    <script src="{% static 'script.js' %}"></script>
 </body>
 </html>
