@@ -14,7 +14,7 @@
     <link rel="icon" type="image/png" sizes="512x512" href="{% static 'images/spider_logo2.png' %}">
 </head>
 <body>
-  <div id="main" style="display: none;">
+  <div id="main" > <!-- style="display: none;" -->
       <div id="upper_bar" class="bg-black p-8 flex justify-between items-center p-0">
           <div id="left_bar" class="ml-8 my-2">
             <a href="#">
@@ -73,12 +73,17 @@
                 </div>
                 <input type="text" style="border-radius: 0 1.5rem 1.5rem 0; box-shadow: 0 4px 0px rgb(0, 0, 0);" class="border-2 border-black w-3/4 mr-8">
                 
-                <button style="border-color: #000000; border-radius: 1.5rem 1.5rem 1.5rem 1.5rem; box-shadow: 0 4px 0px rgb(0, 0, 0);" type="button" class="px-10 py-6 border-3"><b>WEBSIT CODE ></b></button>
+                <button id="bottom_main" style="border-color: #000000; border-radius: 1.5rem 1.5rem 1.5rem 1.5rem; box-shadow: 0 4px 0px rgb(0, 0, 0);" type="button" class="px-10 py-6 border-3"><b>WEBSIT CODE ></b></button>
             </div>
-        </div>
-        <div class="bg-black flex justify-center rounded-3xl mx-36 my-12 py-28">
-            <h1 id="text_mok2" class="text-white text-4xl leading-snug mx-4"></h1>
-        </div>
+          </div>
+
+          <div class="relative flex justify-center my-12 mx-4">
+            <img src="{% static 'images/bg.png' %}" alt="">
+            <div style="position: absolute;" class="my-10">
+              <h1 id="text_mok2" class="text-white leading-snug mx-4" style="font-size: 3vw;"></h1>
+            </div>
+          </div>
+
         <div>
             <h1 class="flex justify-center text-6xl border-black"><b>OUR COURSES:</b></h1>
         </div>
@@ -121,31 +126,34 @@
               <img class="w-1/6" style="border: 2px solid rgb(0, 0, 0); box-shadow: 0 4px 8px rgb(0, 0, 0);" src="{% static 'images/ai.jpg' %}" alt="">
               <img class="w-1/6" style="border: 2px solid rgb(0, 0, 0); box-shadow: 0 4px 8px rgb(0, 0, 0);" src="{% static 'images/ai.jpg' %}" alt="">
             </div>
-            <div class="flex justify-center my-20">
+            <div class="flex justify-center">
+              <img src="{% static 'images/bg_2.png' %}" alt="">
+            </div>
+            <div class="flex justify-center my-20 mx-8">
               <div class="flex justify-between bg-black rounded-3xl mx-8" style="height: 24rem; width: 80rem;">
                 <img class="h-1/2 ml-20 mt-20" src="{% static 'images/spider_logo2.png' %}" alt="">
-                <div class="flex justify-between mt-28" style="color: #E1E1E1;">
+                <div class="flex justify-between mt-28 mx-8" style="color: #E1E1E1;">
                   <div class="mr-16">
-                    <h1><b>Solutions</b></h1>
+                    <h1 style="font-size: 1vw;"><b>Solutions</b></h1>
                     <h1 id="b_bar_1">Self-hosted</h1>
                     <h1 id="b_bar_1">SaaS Hosting</h1>
                     <h1 id="b_bar_1">Platform</h1>
                     <h1 id="b_bar_1">Desktop App</h1>
                   </div>
                   <div class="mr-16">
-                    <h1><b>Documentation</b></h1>
+                    <h1 style="font-size: 1vw;"><b>Documentation</b></h1>
                     <h1 id="b_bar_1">hassan</h1>
                     <h1 id="b_bar_1">hassan</h1>
                     <h1 id="b_bar_1">hassan</h1>
                   </div>
                   <div class="mr-16">
-                    <h1><b>resources</b></h1>
+                    <h1 style="font-size: 1vw;"><b>resources</b></h1>
                     <h1 id="b_bar_1">hassan</h1>
                     <h1 id="b_bar_1">hassan</h1>
                     <h1 id="b_bar_1">hassan</h1>
                   </div>
                   <div class="mr-16">
-                    <h1><b>Company</b></h1>
+                    <h1 style="font-size: 1vw;"><b>Company</b></h1>
                     <h1 id="b_bar_1">hassan</h1>
                     <h1 id="b_bar_1">hassan</h1>
                     <h1 id="b_bar_1">hassan</h1>
@@ -154,14 +162,14 @@
               </div>
             </div>
     </div>
-
+<!--
     <div id="loading-screen">
       <video autoplay muted loop>
           <source src="{% static 'images/load.mp4' %}" type="video/mp4">
           Your browser does not support the video tag.
       </video>
-  </div>
-
+     </div>
+-->
 
 
     <!--scripts hassan-->

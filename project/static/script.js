@@ -1,9 +1,10 @@
-
+/*
 setTimeout(function() {
     document.getElementById("loading-screen").style.display = "none";
     document.getElementById("main").style.display = "block";
     
-    }, 2700);
+    },2000);
+    */
 
 var typed = new Typed("#text_mok", {
     strings: ["Join us to<br>learn program like <span style='color: rgb(255, 255, 255);'>spider web.</span>"],
@@ -16,7 +17,7 @@ var typed = new Typed("#text_mok", {
                using namespace <span style='color: #0116FF;'>std;</span><br> \
                <span style='color: #0116FF;'>int</span> main() {<br> \
                // <span style='color: #00FFE1;'>Welcome message for<br>Spider Coding visitors</span><br> \
-               cout << <span style='color: #EEFF00;'>\"Hi! Welcome to Spider Coding!\"</span> << endl;<br> \
+               cout << <span style='color: #EEFF00;'>\"Hi! Welcome to Spider Coding!<br>you can learn with us how to become<br>programmer\"</span> << endl;<br> \
                <span style='color: #0116FF;'>return</span> 0; }</b>"],
     typeSpeed: 25
   });

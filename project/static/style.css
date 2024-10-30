@@ -26,9 +26,18 @@
   #logout:hover{
     background-color: white; /* Set initial color */
   }
+  #bottom_main{
+    background-color: white;
+    transition: color 0.3s ease;
+  }
+  #bottom_main:hover{
+    background-color: #000000;
+    color: #fff;
+  }
 
   #b_bar_1{
     margin-top: 1rem;
+    font-size: 1vw;
   }
 
   #loading-screen {
@@ -45,5 +54,5 @@
 }
 
 #loading-screen video {
-    width: 120%; /* Adjust as needed */
+    width: 120%;
 }
