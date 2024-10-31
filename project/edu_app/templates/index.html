@@ -14,7 +14,7 @@
     <link rel="icon" type="image/png" sizes="512x512" href="{% static 'images/spider_logo2.png' %}">
 </head>
 <body>
-  <div id="main" > <!-- style="display: none;" -->
+  <div id="main" style="display: none;"> <!-- style="display: none;" -->
       <div id="upper_bar" class="bg-black p-8 flex justify-between items-center p-0">
           <div id="left_bar" class="ml-8 my-2">
             <a href="#">
@@ -23,7 +23,7 @@
           </div>
           <div id="right_bar" class="flex space-x-4 mr-12 text-xl">
               <a href="#">HOME</a>
-              <a href="#">COURSES</a>
+              <a href="{% url 'courses' %}">COURSES</a>
               <a href="#">CHALLENGES</a>
               <a href="#">PROFILE</a>
               <a href="#" class="pr-1">
@@ -131,7 +131,7 @@
             </div>
             <div class="flex justify-center my-20 mx-8">
               <div class="flex justify-between bg-black rounded-3xl mx-8" style="height: 24rem; width: 80rem;">
-                <img class="h-1/2 ml-20 mt-20" src="{% static 'images/spider_logo2.png' %}" alt="">
+                <img class="mt-20" style="height: 12vw; margin-left: 4vw;" src="{% static 'images/spider_logo2.png' %}" alt="">
                 <div class="flex justify-between mt-28 mx-8" style="color: #E1E1E1;">
                   <div class="mr-16">
                     <h1 style="font-size: 1vw;"><b>Solutions</b></h1>
@@ -162,14 +162,14 @@
               </div>
             </div>
     </div>
-<!--
+
     <div id="loading-screen">
       <video autoplay muted loop>
           <source src="{% static 'images/load.mp4' %}" type="video/mp4">
           Your browser does not support the video tag.
       </video>
      </div>
--->
+
 
 
     <!--scripts hassan-->
