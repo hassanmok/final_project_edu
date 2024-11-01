@@ -1,11 +1,11 @@
 
-
+/*
 setTimeout(function() {
     document.getElementById("loading-screen").style.display = "none";
     document.getElementById("main").style.display = "block";
     
     },2700);
-
+*/
 
 var typed = new Typed("#text_mok", {
     strings: ["Join us to<br>learn program like <span style='color: rgb(255, 255, 255);'>spider web.</span>"],

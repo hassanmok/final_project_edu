@@ -14,7 +14,7 @@
     <link rel="icon" type="image/png" sizes="512x512" href="{% static 'images/spider_logo2.png' %}">
 </head>
 <body>
-  <div id="main" style="display: none;"> <!-- style="display: none;" -->
+  <div id="main"> <!-- style="display: none;" -->
       <div id="upper_bar" class="bg-black p-8 flex justify-between items-center p-0">
           <div id="left_bar" class="ml-8 my-2">
             <a href="#">
@@ -88,6 +88,8 @@
             <h1 class="flex justify-center text-6xl border-black"><b>OUR COURSES:</b></h1>
         </div>
         <div class="flex justify-center flex justify-evenly my-12">
+
+
             <div class="card" style="width: 18rem;">
                 <img class="card-img-top" src="{% static 'images/spider_logo.png' %}" alt="Card image cap">
                 <div class="card-body">
@@ -126,9 +128,65 @@
               <img class="w-1/6" style="border: 2px solid rgb(0, 0, 0); box-shadow: 0 4px 8px rgb(0, 0, 0);" src="{% static 'images/ai.jpg' %}" alt="">
               <img class="w-1/6" style="border: 2px solid rgb(0, 0, 0); box-shadow: 0 4px 8px rgb(0, 0, 0);" src="{% static 'images/ai.jpg' %}" alt="">
             </div>
-            <div class="flex justify-center">
+
+
+            <div class="flex justify-center relative my-48 mx-10">
               <img src="{% static 'images/bg_2.png' %}" alt="">
+              <div style="position: absolute; right: 15vw;" class="my-4">
+                  <div class="mb-6 py-2 px-2"> 
+                    <button style="font-size: 1vw; border: 2px dashed black;" type="button" class="btn btn-outline-dark rounded-3xl py-2 px-2">github account</button>
+                    <button style="font-size: 1vw; border: 2px dashed black;" type="button" class="btn btn-outline-dark rounded-3xl py-2 px-2 ml-20">social media</button>
+                  </div>
+              </div>
+              <div style="position: absolute; left: 15vw;" class="my-8">
+                <div style="border: 2px solid black; background-color: #000000;" class="mb-6 py-2 px-3 rounded-3xl"> 
+                  <h1 style="font-size: 1vw; color: white;">CERETERS</h1>
+                </div>
             </div>
+            <div style="position: absolute; top: 10vw; border: 2px solid black;" class="rounded-3xl flex justify-center">
+              <div style="border: .5vw solid black; margin: 2vw .5vw 2vw 2vw; background-color: white; width: 20vw;" class=" rounded-3xl">
+                <div class="flex justify-between" style="margin: 1vw;">
+                  <img style="height: 4vw;" src="{% static 'images/has.png' %}" alt="">
+                  <img style="height: 4vw;" class="rounded-3xl" src="{% static 'images/spider.png' %}" alt="">
+                </div>
+                <div style=" margin: .8vw;">
+                  <h1 style="font-size: 1.5vw;"><b>hassan abdulhadi</b></h1>
+                  <p style="font-size: 1vw; margin-top: 1vw;">Hello my name is hassan<br> and i full<br>
+                    stack developer </p>
+                </div>
+              </div>
+              <div style="border: .5vw solid black; margin: 2vw 2vw 2vw .5vw; background-color: white; width: 20vw;" class=" rounded-3xl">
+                <div class="flex justify-between" style="margin: 1vw;">
+                  <img style="height: 4vw;" src="{% static 'images/abd.png' %}" alt="">
+                  <img style="height: 4vw;" class="rounded-3xl" src="{% static 'images/spider.png' %}" alt="">
+                </div>
+                <div style=" margin: .8vw;">
+                  <h1 style="font-size: 1.5vw;"><b>abdullah jalal</b></h1>
+                  <p style="font-size: 1vw; margin-top: 1vw;">Hello my name is abdullah<br> and i full<br>
+                    stack developer </p>
+                </div>
+              </div>
+              <div style="
+                border-left: 2px dashed rgb(0, 0, 0);
+                height: 20vw;
+              ">
+              </div>
+              <div class="bg-white" style="border-radius: 0 25px 25px 0; padding: 4vw; font-size: 1.5vw;">
+                <h1><b>Languages</b></h1>
+                <p>We built this site using:<br> front: HTML,CSS,JS.<br>
+                  back: framework<br> python(DJANGO) </p>
+              </div>
+            </div>
+
+            <div style="position: absolute; top: 40vw;">
+              <h1 style="text-align: center; font-size: 4vw;">"spidercoding.com is awesome<br>AND built on open source"</h1>
+            </div>
+
+            
+            </div>
+
+
+
             <div class="flex justify-center my-20 mx-8">
               <div class="flex justify-between bg-black rounded-3xl mx-8" style="height: 24rem; width: 80rem;">
                 <img class="mt-20" style="height: 12vw; margin-left: 4vw;" src="{% static 'images/spider_logo2.png' %}" alt="">
@@ -162,7 +220,7 @@
               </div>
             </div>
     </div>
-
+<!--
     <div id="loading-screen">
       <video autoplay muted loop>
           <source src="{% static 'images/load.mp4' %}" type="video/mp4">
@@ -170,7 +228,7 @@
       </video>
      </div>
 
-
+-->
 
     <!--scripts hassan-->
     <script src="{% static 'script.js' %}"></script>
