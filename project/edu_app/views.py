@@ -10,3 +10,6 @@ def index(request):
 
 def courses(request):
     return render(request, "courses.html")
+
+def challenges(request):
+    return render(request, "challenges.html")

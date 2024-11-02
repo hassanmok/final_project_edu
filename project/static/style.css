@@ -44,6 +44,10 @@
     box-shadow: 0 1px 4px #000000;
   }
 
+  #chall_prop:hover{
+    box-shadow: 4px 6px 4px #FF20BC;
+  }
+
   #loading-screen {
     position: fixed;
     top: 0;
@@ -59,4 +63,11 @@
 
 #loading-screen video {
     width: 120%;
+}
+
+tr, th{
+  background-color: gray;
+}
+tr{
+  border-color: white;
 }

@@ -22,3 +22,17 @@ var typed = new Typed("#text_mok", {
                <span style='color: #0116FF;'>return</span> 0; }</b>"],
     typeSpeed: 25
   });
+
+  function show_all_py(){
+    document.getElementById("main_courses").style.display = "none";
+    document.getElementById("main_courses_py").style.display = "block";
+  }
+  function show_quizzes(){
+    document.getElementById("random").style.display = "none";
+    document.getElementById("quizzes").style.display = "flex";
+
+  }
+  function show_random(){
+    document.getElementById("quizzes").style.display = "none";
+    document.getElementById("random").style.display = "flex";
+  }
