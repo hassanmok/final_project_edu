@@ -1,7 +1,10 @@
+from django.contrib.auth import authenticate, login, logout
+from django.db import IntegrityError
+from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render
-from django.http import request, HttpResponseRedirect
+
 from django.urls import reverse
-from django.shortcuts import render
+from .models import User
 # Create your views here.
 
 
@@ -13,3 +16,45 @@ def courses(request):
 
 def challenges(request):
     return render(request, "challenges.html")
+
+def user_login(request):
+    if request.method == "POST":
+        username = request.POST["username"]
+        password = request.POST["password"]
+        user = authenticate(request, username=username, password=password)
+        if user is not None:
+            login(request, user)
+            return HttpResponseRedirect(reverse("index"))
+        else:
+            return render(request, "login.html", {
+                "error": "Invalid username and/or password."
+            })
+    else:
+        return render(request, "login.html")
+    
+def user_logout(request):
+    logout(request)
+    return HttpResponseRedirect(reverse("index"))
+
+
+
+
+def signup(request):
+    if request.method == "POST":
+        username = request.POST["username"]
+        email = request.POST["email"]
+        password = request.POST["password"]
+        confirmation_pass = request.POST["confirmation"]
+        if password != confirmation_pass:
+            return render(request, "signup.html", {"error": "Passwords don't match."})
+        try:
+            user = User.objects.create_user(username, email, password)
+            user.save()
+        except IntegrityError:
+            return render(request, "signup.html", {"error": "Username already taken."})
+        if User.objects.filter(email=email).exists():
+            return render(request, "signup.html", {"error": "Email already taken."})
+        login(request, user)
+        return HttpResponseRedirect(reverse("login"))
+    else:
+        return render(request, "signup.html")
