@@ -58,3 +58,8 @@ def signup(request):
         return HttpResponseRedirect(reverse("login"))
     else:
         return render(request, "signup.html")
+    
+
+
+def profile(request):
+    return render(request, "profile.html")
