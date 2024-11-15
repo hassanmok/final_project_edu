@@ -26,9 +26,9 @@
           <div id="right_bar" class="flex space-x-4 mr-12 text-xl">
               <a href="#">HOME</a>
               <a href="{% url 'courses' %}">COURSES</a>
-              <a href="{% url 'challenges' %}">CHALLENGES</a>
               
               {% if user.is_authenticated %}
+              <a href="{% url 'challenges' %}">CHALLENGES</a>
               <a href="{% url 'profile'%}">PROFILE</a>
               <a href="{% url 'logout'%}" class="pr-1">
               <svg id="logout" xmlns="http://www.w3.org/2000/svg" class="rounded-xl py-0.5 pr-1" width="32" height="30" fill="currentColor" class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">

@@ -36,22 +36,41 @@
         </div>
     </div>
 
-    <div class="bg-black mt-4 mx-32 rounded-xl mb-4 p-4" style="color: white;">
-        <div class="flex justify-between">
+    <div class="bg-black mt-4 mx-32 rounded-xl mb-4 p-4" style="color: white; margin-left:15%; margin-right: 15%;height: 20rem;">
+        <div class="flex justify-between" style="height: 65%;">
             <div class="flex">
-                <img src="{% static 'images/abd.png'%}" width="100%" height="60%" alt="">
-                <div>
-                    <h1 class="text-2xl">Abdullah jalal</h1>
-                    <p class="text-xl">Iraq, Baghdad</p>
+                <div class="mr-4" style="height: 100%;">
+                    <img src="{% static 'images/abd.png'%}" width="100%" style="height: 100%;" alt="" class="mr-8">
+                </div>
+                <div class="mt-8">
+                    <p class="text-2xl">Abdullah jalal</p>
+                    <p>Iraq, Baghdad</p>
                 </div>
             </div>
-            <div>
-                  <h1>like , dislike</h1>
+
+            <div class="like-button">
+            <input class="on" id="heart" type="checkbox" />
+            <label class="like" for="heart">
+                <svg
+                class="like-icon"
+                fill-rule="nonzero"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                >
+                <path
+                    d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z"
+                ></path>
+                </svg>
+                <span class="like-text">Likes</span>
+            </label>
+            <span class="like-count one">68</span>
+            <span class="like-count two">69</span>
             </div>
+
         </div>
-        <div>
-            <h1 class="flex">Languages:</h1>
-            <div class="flex" style="width: 3%;">
+        <div class="mt-4">
+            <h1 class="flex ml-2">Languages:</h1>
+            <div class="flex mt-2" style="width: 5%;">
                 <img src="{% static 'images/c++.png' %}" alt="">
                 <img src="{% static 'images/c++.png' %}" alt="">
                 <img src="{% static 'images/c++.png' %}" alt="">
@@ -62,16 +81,25 @@
     </div>
     <div class="flex justify-center">
 
-        <div class="flex justify-center bg-black p-4 rounded-xl" style="color: white;">
+        <div class="flex justify-center bg-black p-4 rounded-xl ml-32" style="color: white;">
             <div class="mr-8">
-                <h1 class="text-2xl mb-2">Contact info.:</h1>
+                <h1 class="text-2xl mb-2">Contact information:</h1>
                 <h1 class="mb-2">Email:</h1>
                 <h1 class="mb-8">gggg.gamil.com</h1>
                 <h1 class="mb-2">socail account:</h1>
                 <div class="flex">
-                    <i class="bi bi-github text-2xl mr-2"></i>
-                    <i class="bi bi-linkedin text-2xl mr-2"></i>
-                    <i class="bi bi-facebook text-2xl mr-2"></i>
+                    <a href="">
+
+                        <i class="icon_socal bi bi-github text-2xl mr-2"></i>
+                    </a>
+                    <a href="">
+
+                        <i class="icon_socal bi bi-linkedin text-2xl mr-2"></i>
+                    </a>
+                    <a href="">
+
+                        <i class="icon_socal bi bi-facebook text-2xl mr-2"></i>
+                    </a>
                 </div>
             </div>
             <div>
@@ -80,29 +108,46 @@
                 <h1>07807976880</h1>
             </div>
         </div>
-        <div class="bg-black mx-32 p-4 rounded-xl" style="color: white;">
-            <div class="flex">
-
-                <h1>hhhh</h1>
-                <h2>hhhh</h2>
-
+        <div class="mx-32 rounded-xl flex" style="color: white; background-color: #FF00C8;">
+            <div style="text-align: center;">
+                <h1 style="padding: 20px 20px 10px;">5</h1>
+                <h1 style="padding: 10px 10px 30px;">problem solving</h1>
+                <div style=" width: 135px;
+                height: 1px;
+                background-color: black;
+                "></div>
+                <div>
+                    <h1 style="padding: 20px 20px 10px;">2022\6\5</h1>
+                    <h1 style="padding: 10px 10px 20px;">member since</h1>
+                </div>
             </div>
-            <div class="flex">
-
-                <h1>hhhh</h1>
-                <h2>hhhh</h2>
-
+            <div style=" width: 1px;
+            height: 225px;
+            background-color: black;
+            ">
+            </div>
+            <div style="text-align: center;">
+                <h1 style="padding: 20px 20px 10px;">5</h1>
+                <h1 style="padding: 10px 10px 30px;">courses completed</h1>
+                <div style=" width: 155px;
+                height: 1px;
+                background-color: black;
+                "></div>
+                <div>
+                    <h1 style="padding: 20px 20px 10px;">33</h1>
+                    <h1 style="padding: 10px 10px 20px;">profile likes</h1>
+                </div>
             </div>
             
         </div>
 
     </div>
-    <div class="flex justify-center mt-4" style="font-size: 2vw; margin-left: 2vw;">
+    <div style="font-size: 2vw; margin-left: 28%; margin-top: 2%;">
         <h1>Search for member: </h1>
     </div>
-        <div class="input-group input-group-lg mx-8 mb-2 mt-8 flex justify-center">
+        <div class="input-group input-group-lg mb-2 mt-2 flex justify-center">
             <div class="input-group-prepend">
-              <span style="font-size: 1vw; border-radius: 1.5rem 0 0 1.5rem; box-shadow: 0 4px 0px rgb(0, 0, 0); background-color: #E1E1E1; height: 5vw;" class="input-group-text border-black" id="inputGroup-sizing-lg"><img width="35vw" src="{%static 'images/code.png'%}" alt=""></span>
+              <span style="font-size: 1vw; border-radius: 1.5rem 0 0 1.5rem; box-shadow: 0 4px 0px rgb(0, 0, 0); background-color: #E1E1E1; height: 5vw;" class="input-group-text border-black" id="inputGroup-sizing-lg"><img width="35vw" src="{%static 'images/search.png'%}" alt=""></span>
             </div>
             <input type="text" style="border-radius: 0 1.5rem 1.5rem 0; box-shadow: 0 4px 0px rgb(0, 0, 0); width: 30vw; height: 5vw; margin-right: 4VW;" class="border-2 border-black">
             
