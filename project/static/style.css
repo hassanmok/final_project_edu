@@ -4,8 +4,6 @@
     box-sizing: border-box;
     outline: none;
     text-decoration: none;
-    list-style: none;
-    
   }
 
   #bar_right{
@@ -178,3 +176,16 @@ tr{
   .icon_socal:hover{
     color: #FF20BC;
   }
+
+
+
+
+
+#JOIN{
+  background-color: #FF00BF;
+  transition: color 0.3s ease;
+}
+#JOIN:hover{
+  background-color: white;
+  color: #FF20BC;
+}

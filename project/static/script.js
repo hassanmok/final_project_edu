@@ -1,11 +1,10 @@
 
-/*
+
 setTimeout(function() {
     document.getElementById("loading-screen").style.display = "none";
     document.getElementById("main").style.display = "block";
     
     },2700);
-*/
 
 var typed = new Typed("#text_mok", {
     strings: ["Join us to<br>learn program like <span style='color: rgb(255, 255, 255);'>spider web.</span>"],
@@ -35,4 +34,8 @@ var typed = new Typed("#text_mok", {
   function show_random(){
     document.getElementById("quizzes").style.display = "none";
     document.getElementById("random").style.display = "flex";
+  }
+  function more_details_py(){
+    document.getElementById("main_courses_py").style.display = "none";
+    document.getElementById("python_cour_beg").style.display = "flex";
   }
