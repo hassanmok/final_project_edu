@@ -63,3 +63,6 @@ def signup(request):
 
 def profile(request):
     return render(request, "profile.html")
+
+def learn(request):
+    return render(request, "join.html")
