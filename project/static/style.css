@@ -193,7 +193,7 @@ tr{
 
 @keyframes moveIcons {
   0% {
-    transform: translateX(-100%); /* Start from outside the left edge */
+    transform: translateX(0); /* Start from outside the left edge */
 }
 100% {
     transform: translateX(100%); /* End at the starting position to loop smoothly */

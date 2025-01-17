@@ -31,6 +31,25 @@ def user_login(request):
             })
     else:
         return render(request, "login.html")
+
+
+def join_to_login(request):
+    return render(request, "login_after_join.html")
+
+def user_login_after_join(request):
+    if request.method == "POST":
+        username = request.POST["username"]
+        password = request.POST["password"]
+        user = authenticate(request, username=username, password=password)
+        if user is not None:
+            login(request, user)
+            return render(request, "join.html")
+        else:
+            return render(request, "login.html", {
+                "error": "Invalid username and/or password."
+            })
+    else:
+        return render(request, "login.html")
     
 def user_logout(request):
     logout(request)
