@@ -41,3 +41,81 @@ var typed = new Typed("#text_mok", {
     document.getElementById("main_courses_py").style.display = "none";
     document.getElementById("python_cour_beg").style.display = "flex";
   }
+
+  window.onload = function() {
+    document.getElementById('CERETERS_btn').click();}
+
+  let hassan_div = document.getElementById('hassan_div')
+  let abdullah_div = document.getElementById('abdullah_div')
+
+
+
+  function writeToCERETERS(){
+    hassan_div.innerHTML=`<h1 style="font-size: 1.5vw;"><b>hassan abdulhadi</b></h1>
+                    <p style="font-size: 1vw; margin-top: 1vw;">Hello my name is hassan<br> and i full<br> stack developer </p>`
+    abdullah_div.innerHTML=`<h1 style="font-size: 1.5vw;"><b>abdullah jalal</b></h1>
+                    <p style="font-size: 1vw; margin-top: 1vw;">Hello my name is abdullah<br> and i full<br>
+                      stack developer </p>`
+
+  }
+
+  function writeToSocial(){
+    hassan_div.innerHTML=`<h1 style="font-size: 1.5vw;"><b>hassan abdulhadi</b></h1>
+    <p style="font-size: 1vw; margin-top: 1vw;">
+      <a href="">
+
+                        <i class="icon_socal bi bi-linkedin text-2xl mr-2"></i>
+                    </a>
+      <a href="">
+
+                        <i class="icon_socal bi bi-facebook text-2xl mr-2"></i>
+                    </a>
+      <a href="">
+
+                        <i class="icon_socal bi bi-instagram text-2xl mr-2"></i>
+                    </a>
+    
+    
+    </p>`
+    abdullah_div.innerHTML=`<h1 style="font-size: 1.5vw;"><b>abdullah jalal</b></h1>
+    <p style="font-size: 1vw; margin-top: 1vw;">
+    <a href="">
+
+                        <i class="icon_socal bi bi-linkedin text-2xl mr-2"></i>
+                    </a>
+                    <a href="">
+
+                        <i class="icon_socal bi bi-facebook text-2xl mr-2"></i>
+                    </a>
+                          <a href="">
+
+                        <i class="icon_socal bi bi-instagram text-2xl mr-2"></i>
+                    </a>
+    
+    
+    </p>`
+
+  }
+
+
+
+
+
+  function writeToGithub(){
+    hassan_div.innerHTML=`<h1 style="font-size: 1.5vw;"><b>hassan abdulhadi</b></h1>
+    <p style="font-size: 1vw; margin-top: 1vw;">
+     username:hassanmok
+    URL:<a style="color:blue;onclick:pink;" href="https://github.com/hassanmok">https://github.com/hassanmok</a>
+
+    
+    
+    </p>`
+    abdullah_div.innerHTML=`<h1 style="font-size: 1.5vw;"><b>abdullah jalal</b></h1>
+    <p style="font-size: 1vw; margin-top: 1vw;">
+      username:AbdullahG5
+     URL:<a style="color:blue;" href="https://github.com/AbdullahG5">https://github.com/AbdullahG5</a>
+    
+    </p>`
+
+  }
+ 

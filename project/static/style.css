@@ -189,3 +189,13 @@ tr{
   background-color: white;
   color: #FF20BC;
 }
+
+
+@keyframes moveIcons {
+  0% {
+    transform: translateX(-100%); /* Start from outside the left edge */
+}
+100% {
+    transform: translateX(100%); /* End at the starting position to loop smoothly */
+}
+}
