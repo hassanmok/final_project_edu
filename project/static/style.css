@@ -196,6 +196,6 @@ tr{
     transform: translateX(0); /* Start from outside the left edge */
 }
 100% {
-    transform: translateX(100%); /* End at the starting position to loop smoothly */
+    transform: translateX(-33.33%); /* End at the starting position to loop smoothly */
 }
 }

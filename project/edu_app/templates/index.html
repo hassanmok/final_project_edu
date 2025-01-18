@@ -135,34 +135,39 @@
 
 
 
-
-            <div style="position: relative; height: 50vw; overflow: hidden; white-space: nowrap;">
-    <!-- lap.png positioned absolutely on top -->
-    <img 
-        style="z-index: 100; position: absolute; top: 0; left: 0;" 
-        height="20vw" 
-        src="{% static 'images/lap_2.png' %}" 
-        alt=""
-    >
-    
-    <!-- Container for three images moving left to right -->
-    <div 
-        style="
-            z-index: 50; 
-            position: absolute; 
-            top: 10vw; 
-            left: 0; 
-            display: flex; 
-            animation: moveIcons 20s infinite linear;"
-    >
-        <!-- Images arranged horizontally with no gaps -->
-
-        <img style="flex-shrink: 0;" height="10vw" src="{% static 'images/icon1.png' %}" alt="">
-        <img style="flex-shrink: 0;" height="10vw" src="{% static 'images/icon1.png' %}" alt="">
-        <img style="flex-shrink: 0;" height="10vw" src="{% static 'images/icon1.png' %}" alt="">
-        <img style="flex-shrink: 0;" height="10vw" src="{% static 'images/icon1.png' %}" alt="">
-    </div>
-</div>
+            <div style="position: relative; height: 50vw; overflow: hidden;">
+              <!-- Static background image -->
+              <img 
+                  style="
+                      z-index: 3; 
+                      position: absolute; 
+                      top: 0; 
+                      left: 0; 
+                      width: 100%; 
+                      height: 100%; 
+                      object-fit: cover;" 
+                  src="{% static 'images/lap_2.png' %}" 
+                  alt="Background Image"
+              >
+          
+              <!-- Moving images container -->
+              <div 
+                  id="movingImages" 
+                  style="
+                      z-index: 2; 
+                      position: absolute; 
+                      top: 10vw; 
+                      left: 0; 
+                      display: flex;
+                      white-space: nowrap; /* Prevent wrapping of images */
+                  "
+              >
+                  <!-- Moving images -->
+                  <img class="moveImage" style=" flex-shrink: 0;" src="{% static 'images/icone.png' %}" alt="Icon 1">
+                  <img class="moveImage" style="  flex-shrink: 0;" src="{% static 'images/icon1.png' %}" alt="Icon 2">
+                  <img class="moveImage" style=" flex-shrink: 0;" src="{% static 'images/icon2.png' %}" alt="Icon 3">
+              </div>
+          </div>
             
             {% comment %} <div style="position: relative;">
               <!-- Absolute positioned lap.png -->

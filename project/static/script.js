@@ -119,3 +119,35 @@ var typed = new Typed("#text_mok", {
 
   }
  
+  document.addEventListener('DOMContentLoaded', function() {
+    const container = document.getElementById('movingImages');
+    const images = Array.from(container.children);
+
+    // Clone images for a seamless loop
+    images.forEach((img) => {
+        const clone = img.cloneNode(true);
+        container.appendChild(clone);
+    });
+
+    // Set initial position and speed
+    let position = 0;
+    let speed = 1; // Change this for faster or slower animation
+    const containerWidth = container.scrollWidth / 2; // Adjust container width after cloning images
+
+    function animateImages() {
+        position -= speed; // Move the images by 'speed' pixels
+
+        // When we've moved the width of half the container, reset the position for a seamless loop
+        if (Math.abs(position) >= containerWidth) {
+            position = 0;
+        }
+
+        container.style.transform = `translateX(${position}px)`;
+
+        // Continuously call this function to animate
+        requestAnimationFrame(animateImages);
+    }
+
+    // Start animation when DOM is ready
+    animateImages();
+});
